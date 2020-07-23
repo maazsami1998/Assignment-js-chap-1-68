@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+     img{
+        width: 280px;
+        height: 280px;
+    }
+    </style>
+    <input type="text" id="inp">
+    <!-- <input type="button" value="Click" onclick="LeapYear()"> -->
+    <!-- <input type="button" value="Click" onclick="OverTimePay()"> -->
+
+    <input type="button" value="Click" onclick="CurrencyNotes()">
+
+    <p id="output"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    <p id="output4"></p>
+
+        <!-- ----- CHAP  43 to 48 -----   -->
+        <!-- Task 01 -->
+    <a href="#" onClick="alert('Hi');">Click</a>
+</br>
+
+<!-- Task 02 -->
+    <input type="button" onclick="showImage()" value="Show images">
+    <img src="" id="img1">
+    <img src="" id="img2">
+    <img src="" id="img3">
+    <img src="" id="img4">
+
+
+
+    <!-- Task 03 -->
+    <table id="stTable" class="table table-bordered table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"> </td>
+            </tr>
+           
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"> </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James</td>
+                <td></td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"> </td>
+            </tr>
+            <tr>
+        </thead>
+    </table>
+
+    <!-- Task 4 -->
+    <img src="rambow1.jpg" onmouseover="src='rambow2.jpg'" onmouseout="src='rambow1.jpg'">
+<br>
+<br>
+    <!-- Task 4 -->
+    <button id="btnAdd" >Add</button>
+        <br>
+    <button id="btnSub" >Subtract</button>
+        <br>
+    <input type="text" id="count" value="0">
+</body>
+</html>
+
+
+<!-- ----- CHAP  49 to 52 -----   -->
+<!-- Task 01 -->
+<br>
+<br>
+    UserName :
+    <input type="text" id="uname">
+    Password :
+    <input type="password" id="pass">
+   <button onclick="signUp()">Sign Up</button>
+
+<br>
+<table id="signupTable" class="border">
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+   
+
+</table>
+
+<!-- Task 02 -->
+
+<h2>Read More Read Less Button</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span>
+    <span id="more" style="display: none;">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+<!-- Task 03 -->
+
+<table>
+    <tr id="data_table">
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+    </tr>
+    <tr id="row1">
+        <td id="name_row1">Iqbal Anas</td>
+        <td id="country_row1">Pakistan</td>
+        <td id="age_row1">23</td>
+        <td>
+        <input type="button" id="insertBtn" value="Insert" class="Save" onclick="save_row('1')">
+        <input type="button" id="UpdateBtn" value="Update" class="edit" onclick="edit_row('1')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+    </td>
+    </tr>
+
+
+    <tr id="row2">
+        <td id="name_row2">Hassan Anas</td>
+        <td id="country_row2">Pakistan</td>
+        <td id="age_row2">26</td>
+        <td>
+        <input type="button" id="insertBtn" value="Insert" class="Save" onclick="save_row('2')">
+        <input type="button" id="UpdateBtn" value="Update" class="edit" onclick="edit_row('2')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+    </td>
+    </tr>
+
+
+    <tr id="row2">
+        <td id="name_row2">Umer Nasir</td>
+        <td id="country_row2">Pakistan</td>
+        <td id="age_row2">22</td>
+        <td>
+        <input type="button" id="insertBtn" value="Insert" class="Save" onclick="save_row('3')">
+        <input type="button" id="UpdateBtn" value="Update" class="edit" onclick="edit_row('3')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+    </td>
+    </tr>
+
+
+    <tr>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_country"></td>
+        <td><input type="text" id="new_age"></td>
+        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+        </tr>
+
+</table>
+
+
+
+<!-- ----- CHAP  49 to 52 -----   -->
+<!-- Task # 01 -->
+
+<div>
+    <h1> DOM </h1>
+    <div id=”form-content” class=”content”>
+    <label for=”first-name”>First Name</label>
+    <input type=”text” id=”first-name” />
+    <label for=”last-name”>Last Name</label>
+    <input type=”text” id=”last-name” />
+    <label for=”email”>Email</label>
+    <input type=”text” id=”email” />
+    </div>
+    <div id=”main-content” class=”content”>
+    <p class=”render”> First Name : Al</p>
+    <p class=”render” id=”lastName”>Last Name: Bank</p>
+    <p class=”render”> Email : albank@example.com</p>
+    <p class=”render”> Country : Pakistan </p>
+    <p class=”render”> contact : +92 334 1432567</p>
+    </div>
+    </div>
